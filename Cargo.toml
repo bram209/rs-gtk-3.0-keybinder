@@ -1,0 +1,20 @@
+[package]
+name = "gtk-3-0-keybinder"
+version = "0.1.0"
+authors = ["Bram Hoendervangers <bram.hoendervangers@gmail.com>"]
+
+[lib]
+name = "libkeybinder"
+test = true
+path = "src/lib.rs"
+
+[[bin]]
+name = "keybinder-example"
+path = "src/example.rs"
+
+[dependencies]
+libc = "0.2.17"
+
+[dependencies.gtk]
+version = "0.1.0"
+features = ["v3_10"]
